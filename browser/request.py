@@ -25,7 +25,7 @@ class Request():
         try:
             response = session.get(url,headers=headers,proxies=proxy,cookies=cookies)
         except Exception as e:
-            msg = f'Finder\nConnect error\nproxy {proxy}\npod {os.environ["HOSTNAME"]}'
+            msg = f'Clicker\nConnect error\nproxy {proxy["https"]}\npod {os.environ["HOSTNAME"]}'
             send_telegram_message(msg)
             return 1
         print('url :', url)
