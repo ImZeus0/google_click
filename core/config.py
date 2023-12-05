@@ -1,0 +1,1 @@
+PROXY_URL = 'https://proxy.adstools.net/proxy'
